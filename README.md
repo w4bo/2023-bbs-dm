@@ -1,10 +1,6 @@
 # DATA MINING
 
-[Data Science and Business Analytics](https://www.bbs.unibo.eu/master-fulltime/master-in-data-science-2)
-
-- Access this content at: https://github.com/w4bo/2022-bbs-dm
-- Referente: <chiara.nicolau@bbs.unibo.it>
-- Referente: <najada.muhaxhiri@bbs.unibo.it>
+- Access this content at: https://github.com/w4bo/2023-bbs-dm
 
 ## `whoami`
 
