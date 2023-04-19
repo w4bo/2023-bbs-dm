@@ -1,7 +1,7 @@
 name: "build"
 on: [push, pull_request]
 jobs:
-  launch-linux:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -11,21 +11,26 @@ jobs:
           architecture: 'x64'
       - name: Run the notebooks
         run: |
-          cd notebooks
-          sudo apt-get install openjdk-8-jdk-headless -qq > /dev/null
-          wget -q https://archive.apache.org/dist/spark/spark-3.2.1/spark-3.2.1-bin-hadoop2.7.tgz
-          
+          cd materials
+          sudo apt-get install openjdk-8-jdk-headless -qq
+          wget -q http://archive.apache.org/dist/spark/spark-3.1.1/spark-3.1.1-bin-hadoop3.2.tgz
+          wget http://big.csr.unibo.it/projects/nosql-datasets/2022-bbs-dsaa-foodmart.csv
+          tar xf spark-3.1.1-bin-hadoop3.2.tgz
           sudo mkdir -p /content
-          tar xf spark-3.2.1-bin-hadoop2.7.tgz
-          sudo mv spark-3.2.1-bin-hadoop2.7 /content
-
-          pip install -r requirements.txt > /dev/null
-          for f in *.ipynb; 
-            do echo "Processing $f file...";
-            jupyter nbconvert --execute --to notebook --inplace $f
-            jupyter nbconvert --to script $f
-            extension="${f##*.}"
-            filename="${f%.*}"
-            ipython $filename.py
-          done
+          sudo mv spark-3.1.1-bin-hadoop3.2 /content
+          pip install -r requirements.txt
+          chmod +x generate.sh
+          ./generate.sh
+          mkdir _site
+          cp *.css _site
+          cp *.html _site
           ls -las
+      - name: Build local Jupyter
+        run: |
+          cd materials
+          docker build -t jupyter .
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: materials/_site # The folder the action should deploy.
