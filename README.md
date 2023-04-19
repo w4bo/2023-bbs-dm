@@ -9,17 +9,20 @@
 
 ## This course
 
-This course provides an introduction to the base principles and methods of Data Mining and Machine Learning, with particular reference to Classification, Clustering, Association Rules, Outliers discovery. It also focuses on the analysis of the major problems related to data quality and data transformation. It features the use of Python to solve data mining and machine learning problems.
+This course is the natural continuation of the Machine Learning course.
+It provides the guidelines for the execution of a Data Mining process and then discusses, with practical examples, the complete pipeline from data to machine learning insights.
  
-**Teaching Method(s)**: The theoretical background and the discussion of the principles are introduced in class with presentation of slides and stimulating discussions with the students. The methods are then applied with lab exercises. Team works are assigned, a final report will be discussed in class.
+**Teaching Method(s)**: The theoretical background and the discussion of the principles are introduced in class with presentation of slides and stimulating discussions with the students. The methods are then applied with lab exercises.
 
 ## Programme
 
 | When | Who | What |
 | -    | -    | -    |
-| Day 1 (19/04/2022; 09:30-16:30) | Matteo Francia | Hands-on data mining and machine learning |
-| Day 2 (20/04/2022; 11:30-18:30) | Enrico Gallinucci | Hands-on Spark and OLAP |
-| Day 3 (22/04/2022; 14:30-17:30) | MF + EG | Evaluation, follow-up investigation and discussion |
+| Day 1 (20/04/2022) | Matteo Francia | Hands-on data mining and machine learning |
+| Day 2 (27/04/2022) | Matteo Francia | Hands-on data mining and machine learning |
+| Day 3 (11/05/2022) | Enrico Gallinucci | Hands-on Spark and OLAP |
+| Day 4 (18/05/2022) | Enrico Gallinucci | Hands-on Spark and OLAP  |
+| Day 5 (26/05/2022) | Enrico Gallinucci | Evaluation, follow-up investigation and discussion |
 
 ## Collecting some background
 
