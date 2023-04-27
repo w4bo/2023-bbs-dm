@@ -19,9 +19,9 @@ It provides the guidelines for the execution of a Data Mining process and then d
 | When | Who | What |
 | -    | -    | -    |
 | Day 1 (20/04/2022) | Matteo Francia | Hands-on data mining and machine learning |
-| Day 2 (27/04/2022) | Matteo Francia | Hands-on data mining and machine learning |
+| Day 2 (27/04/2022) | Matteo Francia | Hands-on data mining and machine learning (lab) |
 | Day 3 (11/05/2022) | Enrico Gallinucci | Hands-on Spark and OLAP |
-| Day 4 (18/05/2022) | Enrico Gallinucci | Hands-on Spark and OLAP  |
+| Day 4 (18/05/2022) | Enrico Gallinucci | Hands-on Spark and OLAP (lab) |
 | Day 5 (26/05/2022) | Enrico Gallinucci | Evaluation, follow-up investigation and discussion |
 
 ## Collecting some background
@@ -31,6 +31,3 @@ Please fill out this simple form (it takes ~3 minutes): [https://forms.gle/74wPh
 ## Software
 
 - The lectures are manly based on Colab notebooks, you simply need a Google account (no additional software should be installed for Python and its ecosystem).
-- The lecture on Day 2 requires Tableau Desktop to be installed.
-    - Download [here](https://www.tableau.com/products/desktop/download?signin=academic); installation procedure is trivial.
-    - A free 1-year student license can be requested [here](https://www.tableau.com/it-it/academic/students#form); alternatively, a free 1-year license will be given during the course.
