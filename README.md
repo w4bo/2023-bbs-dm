@@ -4,7 +4,7 @@
 
 ## `whoami`
 
-- Matteo Francia, Ph.D. in Computer Science and Engineering
+- Matteo Francia, Ph.D. in Computer Science and Engineering (m.francia [at] unibo.it)
 - Enrico Gallinucci, Ph.D. in Computer Science and Engineering
 
 ## This course
